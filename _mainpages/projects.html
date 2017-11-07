@@ -1,0 +1,21 @@
+---
+title: projects
+order: 1
+---
+
+<p>Samples of my old and current work. To be updated - need to recover archives.</p>
+<ul>
+{% for project in site.data.projects %}
+<li class="projectBlock">
+  <div class="projectBlockItem">
+    <img src="/assets/img/{{project.image}}" alt="{{ project.name}}" title="{{ project.name}}" class="kdpv"/>
+    <div class="projectText">
+      <a href="{{ project.url }}" class="projectHeading"><h3>{{project.name}}</h3></a>
+      <p class="projectBlockDescription">{{ project.description }}</p>
+      <div class="projectKeywords"><h5>Keywords:</h5><span>{{ project.keywords }}</span></div>
+    </div>
+  </div>
+</li>
+{% endfor %}
+</ul>
+

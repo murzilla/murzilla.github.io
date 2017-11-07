@@ -1,0 +1,95 @@
+---
+---
+@import "colors";
+@import "sizes";
+.site-nav .page-link.menu-active-item {
+  color: $alert-color
+}
+#profilePic {
+  width: 150px;
+  height: 200px;
+  float: right;
+}
+#cvIframe{
+  width: 100%;
+  min-height: 2000px;
+  height: auto;
+}
+
+.projectBlock {
+  display:flex;
+  border:1px solid lightgray;
+  padding: 10px;
+  margin-bottom:25px;
+  flex-direction:column;
+  width:90%;
+  font-size:smaller;
+  h3 {
+    color:black;
+    font-size: small;
+    font-weight:bold;
+    text-align: center;
+  }
+  img {
+    display:block;
+    width:70%;
+    height:70%;
+    margin:0 auto;
+    @include sm {
+      width:50%;
+      height:50%;
+      float:left;
+    }
+  }
+}
+.projectText {
+  margin-left: 10px;
+  @include sm {
+    display:block;
+    width:45%;
+    float:left;
+  }
+}
+.projectKeywords {
+  color:navy;
+  h5 {
+    font-weight:bold;
+    margin-bottom: 0;
+  }
+  span {
+    font-size:smaller;
+  }
+}
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+.kgLoader{
+    width:50px;
+    height:50px;
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+

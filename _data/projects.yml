@@ -1,0 +1,14 @@
+- name: "Interactivepricing.com Web client"
+  date: "2016"
+  description: |
+    A web client for pricing engine
+  url: "https://github.com/luxtersolution/interactivepricing-web"
+  image: "ip-web.png"
+  keywords: "angularjs / express / webpack (babel+es6+sass) / grpc/protobuf "
+- name: "Interactivepricing.com Java client"
+  date: "2017"
+  description: |
+    A java client for pricing engine
+  url: "https://github.com/luxtersolution/interactivepricing-java"
+  image: "ip-java.png"
+  keywords: "javafx / grpc/protobuf / oop (generics + inheritance + builder pattern)"

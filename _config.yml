@@ -1,1 +1,38 @@
+title: "Murat Baktiev"
+description: "age quod agis"
+email: murat.baktiev@gmail.com
+github_username: murzilla
+fb_username: murat.baktiev
+
+# theme settings
 theme: minima
+minima:
+  date_format: "%b %-d, %Y"
+
+# misc settings
+livereload: true
+host: "192.168.56.189"
+sass:
+  sass_dir: _sass
+
+markdown:    kramdown
+
+permalink: "/blog/:year/:month/:day/:title/"
+#excerpt_separator: ""
+
+collections:
+  mainpages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: mainpages
+    values:
+      layout: page
+
+paginate: 3
+paginate_path: "/blog/page:num/"
+
+plugins: ['jekyll-paginate']

@@ -56,4 +56,8 @@ typings/
 
 # dotenv environment variables file
 .env
-
+#jekyll generated
+_site
+.jekyll-metadata
+*.swp
+*.swo
